@@ -64,9 +64,15 @@ a {
     text-decoration: none;
     color: #777;
 }
+.blog-post-content a {
+    color: #e7bf21;
+}
+
+.blog-post-content a:hover,
 a:hover {
     color: #ccc;
 }
+
 ul, li {
     list-style-type: none;
     margin: 0;
@@ -291,6 +297,15 @@ hr {
 
     color: #584806;
 }
+.form-submit > input:hover {
+    cursor: pointer;
+    background-color: #f6e8ac;
+}
+.comment-padding {
+    border-top: 1px solid #eee;
+    display: block;
+    padding: 15px;
+}
 .comment-body {
     width: 97%;
     padding: 15px;
@@ -379,4 +394,16 @@ hr {
 }
 .pagination > .nav-links > .page-numbers.current {
     font-weight: bold;
+}
+
+.comments-pagination {
+    padding: 15px;
+    padding-top: 5px;
+}
+.comments-pagination > .page-numbers {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+    padding: 4px;
+    border: 1px solid #eee;
 }

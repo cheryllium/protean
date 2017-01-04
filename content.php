@@ -12,7 +12,12 @@
     </div>
     <div class="blog-post-footer">
 	<hr />
-	<?php the_date(); ?>
+	<?php if(!is_page()) { ?>
+	    <a href="<?php echo get_permalink(); ?>">
+		<?php comments_number('Leave a Comment', '1 Comment', '% Comments'); ?>
+	    </a>
+	| <?php the_date(); ?>
+	<?php } ?>
     </div>
 </div>
 
@@ -49,11 +54,16 @@
 	</a>
     </div>
     <div class="blog-post-content">
-	<?php the_content(); ?>
+	<?php the_content("(Keep Reading...)", FALSE); ?>
     </div>
     <div class="blog-post-footer">
 	<hr />
-	<?php the_date(); ?>
+	<?php if(!is_page()) { ?>
+	    <a href="<?php echo get_permalink(); ?>">
+		<?php comments_number('Leave a Comment', '1 Comment', '% Comments'); ?>
+	    </a>
+	| <?php the_date(); ?>
+	<?php } ?>
     </div>
 </div>
 <?php endwhile; ?>

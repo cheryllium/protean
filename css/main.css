@@ -62,7 +62,10 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: #777;
+}
+a:hover {
+    color: #ccc;
 }
 ul, li {
     list-style-type: none;
@@ -308,4 +311,72 @@ hr {
     width: 98%;
     border-left: 2px solid #bbb;
     margin-left: auto;
+}
+.blog-post-content {
+    line-height: 1.5em;
+}
+.blog-post-content ul > li {
+    list-style-type: square;
+}
+.blog-post-content ol > li {
+    list-style-type: decimal;
+}
+.blog-post-content blockquote {
+    padding-left: 5px;
+    border-left: 4px solid #eee;
+    font-style: italic;
+}
+.blog-post-content code {
+    padding: 3px;
+    background-color: #eee;
+}
+
+.pagination {
+    font-size: 0.9em;
+    font-family: 'Fira Mono';
+    margin-bottom: 35px;
+    position: relative;
+    height: 120px;
+}
+
+.pagination > .nav-links {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+}
+
+.pagination > .screen-reader-text {
+    display: none;
+}
+.pagination > .nav-links > .page-numbers {
+    padding: 6px;
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0);
+}
+.pagination > .nav-links > .page-numbers.next,
+.pagination > .nav-links > .page-numbers.prev {
+    position: absolute;
+    top: 0;
+
+    width: 80px;
+    text-align: center;
+
+    display: block;
+    text-transform: lowercase;
+    border: 1px solid #eee;
+    border-left: 3px solid #e6bf20;
+}
+.pagination > .nav-links > .page-numbers.next {
+    right: 0;
+}
+.pagination > .nav-links > .page-numbers.prev {
+    left: 0;
+}
+.pagination > .nav-links > .page-numbers.next:hover,
+.pagination > .nav-links > .page-numbers.prev:hover {
+    background-color: #eee;
+}
+.pagination > .nav-links > .page-numbers.current {
+    font-weight: bold;
 }

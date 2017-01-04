@@ -56,4 +56,13 @@
 	<?php the_date(); ?>
     </div>
 </div>
-<?php endwhile; endif; endif; ?>
+<?php endwhile; ?>
+
+<?php
+the_posts_pagination(array('mid_size' => 4,
+			   'prev_text' => __('Page--', 'textdomain'),
+			   'next_text' => __('Page++', 'textdomain'),
+));
+?>
+
+<?php  endif; endif; ?>

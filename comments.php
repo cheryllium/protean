@@ -4,7 +4,7 @@
 <h3 class="comments-list-title">Comments</h3>
 <?php
 if(have_comments()) {
-    wp_list_comments();
+    wp_list_comments('avatar_size=48');
 ?>
 <div class="comments-pagination">
     <?php paginate_comments_links(); ?>

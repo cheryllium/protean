@@ -236,6 +236,52 @@ hr {
     padding: 15px;
     font-size: 1.1em;
 }
+.comments-list-title {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.comment-author {
+    display: block;
+    width: 100%;
+    height: 28px;
+    font-size: 1.1em;
+}
+.comment-author > .avatar {
+    float: left;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.comment-author > cite {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Fira Mono';
+    font-style: normal;
+}
+.comment-author > .says { display: none; }
+.comment-meta {
+    display: block;
+    height: 20px;
+    text-align: left;
+    font-size: 0.9em;
+    border-bottom: 1px solid #ddd;
+}
+.comment-reply-link {
+    text-transform: lowercase;
+    font-size: 0.9em;
+    padding: 5px;
+    display: inline-block;
+    background-color: #eee;
+    border: 1px solid #ddd;
+}
+.comment-reply-link:hover {
+    cursor: pointer;
+    background-color: #fff;
+}
+
 .other-fields, .logged-in-as {
     display: inline-block;
     vertical-align: top;
@@ -302,7 +348,6 @@ hr {
     background-color: #f6e8ac;
 }
 .comment-padding {
-    border-top: 1px solid #eee;
     display: block;
     padding: 15px;
 }
@@ -312,6 +357,8 @@ hr {
 
     margin-left: auto;
     margin-right: auto;
+
+    font-size: 0.9em;
 
     border: 1px solid #eee;
     box-shadow: 0px 0px 15px #eee;
